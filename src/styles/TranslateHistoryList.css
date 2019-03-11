@@ -1,0 +1,65 @@
+.list-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.list-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.4;
+  width: 80px;
+}
+
+.list-table tr:nth-child(even){
+  background-color: #ccc;
+}
+
+.table-tr:hover {
+  background-color: #ececff !important;
+  cursor: pointer;
+}
+
+.table-headers {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2F56A6;
+  font-family: Lato-Bold;
+  color: #fff;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+
+.welcome-message {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: .4px;
+}
+
+.note {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.table-header {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  text-align: center;
+}
+
+.wide-column {
+  width: 40%;
+}
+.narrow-column {
+  width: 10%;
+}

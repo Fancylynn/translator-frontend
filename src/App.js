@@ -1,26 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import TranslateHistoryList from "./components/TranslateHistoryList";
+import TranslatePage from "./components/TranslatePage"
+import Home from "./containers/Home";
+import { NavLink } from "react-router-dom";
+import TranslateDetail from "./components/TranslateDetail";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <div>
+          <h2 className="container-home">
+              <NavLink to="/" className="container-title">Translator</NavLink>    
+          </h2>
+          <p className="note">*Click title to return homepage!</p>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/translate" component={TranslatePage}/>
+            <Route exact path="/translateHistory" component={TranslateHistoryList}/>
+            <Route exact path="/detail/:id" component={TranslateDetail}/>
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
