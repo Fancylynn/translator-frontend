@@ -1,8 +1,8 @@
 import axios from "axios";
 
-// const API_URL = "http://52.87.247.76:8000/restapi";
+const API_URL = "http://52.87.247.76:8000/restapi";
 
-const API_URL = "http://localhost:8000/restapi";
+// const API_URL = "http://localhost:8000/restapi";
 
 export const getAllTranslateHistory = () => {
   const historyURL = "/translate/";
