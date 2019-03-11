@@ -4,17 +4,11 @@ import "../styles/TranslateDetail.css";
 
 class TranslateDetail extends Component {
     state = {
-        detail: {
-            "id": 1,
-            "input_text": "   《惊奇队长》",
-            "language": "zh-CN",
-            "translation": "Surprise Captain",
-            "timestamp": "2019-03-11T00:19:15.196769Z"
-        }
+        detail: null
     };
 
     componentDidMount() {
-        // this.getDetail();
+        this.getDetail();
     }
 
     async getDetail() {
