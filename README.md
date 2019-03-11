@@ -4,7 +4,7 @@ A basic translation app that enables end users to input whatever target words/pa
 Frontend was build using React.js and deployed on AWS using Ubuntu 18.04, Nginx.
 
 ## Instructions
-The website can be visited through link: 
+The website can be visited through link: http://54.165.125.172:3000/
 
 
 ## Components
